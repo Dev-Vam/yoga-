@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Booking Confirmed - Flexi Flow Studio</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Booking Confirmation" name="keywords">
+        <meta content="Your yoga class booking has been confirmed" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.png" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="top-bar-left">
+                            <div class="text">
+                                <i class="far fa-clock"></i>
+                                <h2>5:00 - 16:30</h2>
+                                <p>Mon - Fri</p>
+                            </div>
+                            <div class="text">
+                                <i class="fa fa-phone-alt"></i>
+                                <h2>+27 78 824 6963</h2>
+                                <p>For Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-bar-right">
+                            <div class="social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="img/logo.png" class="logo" alt="Logo"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="price.html" class="nav-item nav-link">Price</a>
+                        <a href="class.html" class="nav-item nav-link">Class</a>
+                        <a href="team.html" class="nav-item nav-link">Trainer</a>
+                        <a href="portfolio.html" class="nav-item nav-link">Feedback</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <div class="dropdown-menu">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                            </div>
+                        </div>
+                        <a href="donations.html" class="nav-item nav-link">Donations</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Booking Confirmed</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="index.html">Home</a>
+                        <a href="booking-success.html">Booking Success</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Success Section Start -->
+        <div class="success-section wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="success-content" style="background:#fff;box-shadow:0 0 30px rgba(0,0,0,0.08);padding:50px 30px;border-radius:8px;">
+                            <div class="success-icon mb-4">
+                                <i class="fas fa-check-circle" style="font-size:80px;color:#28a745;"></i>
+                            </div>
+                            <h2 class="mb-4" style="color:#343148;">Booking Confirmed!</h2>
+                            <p class="lead mb-4" style="color:#797979;font-size:18px;">
+                                Thank you for booking your yoga class with Flexi Flow Studio. Your booking has been successfully submitted!
+                            </p>
+                            
+                            <div class="booking-details mb-4" style="background:#f8f9fa;padding:25px;border-radius:5px;text-align:left;">
+                                <h4 style="color:#343148;margin-bottom:20px;"><i class="fas fa-calendar-check"></i> Booking Details</h4>
+                                <div id="bookingDetails">
+                                    <!-- Booking details will be populated by JavaScript -->
+                                </div>
+                            </div>
+                            
+                            <div class="next-steps mb-4">
+                                <h4 style="color:#343148;margin-bottom:15px;">What's Next?</h4>
+                                <div class="row text-left">
+                                    <div class="col-md-6">
+                                        <div class="step-item mb-3">
+                                            <i class="fas fa-envelope" style="color:#F7CAC9;margin-right:10px;"></i>
+                                            <span>Check your email for confirmation</span>
+                                        </div>
+                                        <div class="step-item mb-3">
+                                            <i class="fas fa-phone" style="color:#F7CAC9;margin-right:10px;"></i>
+                                            <span>We'll contact you within 24 hours</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="step-item mb-3">
+                                            <i class="fas fa-clock" style="color:#F7CAC9;margin-right:10px;"></i>
+                                            <span>Arrive 10 minutes before class</span>
+                                        </div>
+                                        <div class="step-item mb-3">
+                                            <i class="fas fa-tshirt" style="color:#F7CAC9;margin-right:10px;"></i>
+                                            <span>Wear comfortable clothing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info mb-4" style="background:#F7CAC9;padding:20px;border-radius:5px;">
+                                <h5 style="color:#343148;margin-bottom:10px;">Need to make changes?</h5>
+                                <p style="color:#343148;margin-bottom:5px;">
+                                    <i class="fas fa-phone" style="margin-right:8px;"></i>
+                                    Call us: +27 78 824 6963
+                                </p>
+                                <p style="color:#343148;margin-bottom:0;">
+                                    <i class="fas fa-envelope" style="margin-right:8px;"></i>
+                                    Email: flexiflowstudio@gmail.com
+                                </p>
+                            </div>
+                            
+                            <div class="action-buttons">
+                                <a href="index.html" class="btn" style="margin-right:15px;padding:12px 25px;">Back to Home</a>
+                                <a href="class.html" class="btn" style="padding:12px 25px;">View More Classes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Success Section End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <a href="index.html" class="footer-logo"><img src="img/logo.png" alt="Logo"></a>
+                        <h3>599 Franzina str, Pretoria, South Africa</h3>
+                        <div class="footer-menu">
+                            <p>+27 78 824 6963</p>
+                            <p>flexiflowstudio@gmail.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.716436633801!2d28.19108921157813!3d-25.713811044088498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfd8b824b0e7b9%3A0xd0063c93db4ce85d!2s599%20Catharina%20Ave%2C%20Eloffsdal%2C%20Pretoria%2C%200084!5e0!3m2!1sen!2sza!4v1751714168960!5m2!1sen!2sza" width="350" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Flexi Flow Studio</a>, All Right Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+        <!-- Success Page Javascript -->
+        <script>
+            $(document).ready(function() {
+                // Get booking details from URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const bookingData = {
+                    name: urlParams.get('name') || 'Your Name',
+                    classType: urlParams.get('classType') || 'Selected Class',
+                    date: urlParams.get('date') || 'Selected Date',
+                    time: urlParams.get('time') || 'Selected Time'
+                };
+                
+                // Populate booking details
+                $('#bookingDetails').html(`
+                    <p><strong>Name:</strong> ${bookingData.name}</p>
+                    <p><strong>Class Type:</strong> ${bookingData.classType}</p>
+                    <p><strong>Date:</strong> ${bookingData.date}</p>
+                    <p><strong>Time:</strong> ${bookingData.time}</p>
+                `);
+                
+                // Auto-redirect to home page after 10 seconds (optional)
+                // setTimeout(function() {
+                //     window.location.href = 'index.html';
+                // }, 10000);
+            });
+        </script>
+    </body>
+</html> 
