@@ -2749,3 +2749,11 @@ a:focus {
         margin-bottom: 5px;
     }
 }
+
+
+.imgme {
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 20px;
+    display: block;
+}
