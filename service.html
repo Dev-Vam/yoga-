@@ -23,24 +23,27 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        
+        <!-- Language Switcher Script -->
+        <script src="js/translations.js"></script>
     </head>
 
     <body>
         <!-- Top Bar Start -->
-        <div class="top-bar d-none d-md-block">
+        <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
                                 <i class="far fa-clock"></i>
-                                <h2>5:00 - 16:30</h2>
-                                <p>Mon - Fri</p>
+                                <h2 data-translate="topbar.hours">5:00 - 16:30</h2>
+                                <p data-translate="topbar.days">Mon - Fri</p>
                             </div>
                             <div class="text">
                                 <i class="fa fa-phone-alt"></i>
-                                <h2>+27 78 824 6963</h2>
-                                <p>For Appointment</p>
+                                <h2 data-translate="topbar.phone">+27 78 824 6963</h2>
+                                <p data-translate="topbar.appointment">For Appointment</p>
                             </div>
                         </div>
                     </div>
@@ -52,6 +55,7 @@
                                 <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a href=""><i class="fab fa-instagram"></i></a>
                             </div>
+                            <!-- Language switcher will be added here by JavaScript -->
                         </div>
                     </div>
                 </div>
@@ -69,22 +73,22 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link active">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="class.html" class="nav-item nav-link">Class</a>
-                        <a href="team.html" class="nav-item nav-link">Trainer</a>
-                        <a href="portfolio.html" class="nav-item nav-link">Feedback</a>
+                        <a href="index.html" class="nav-item nav-link" data-translate="nav.home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-translate="nav.about">About</a>
+                        <a href="service.html" class="nav-item nav-link active" data-translate="nav.service">Service</a>
+                        <a href="price.html" class="nav-item nav-link" data-translate="nav.price">Price</a>
+                        <a href="class.html" class="nav-item nav-link" data-translate="nav.class">Class</a>
+                        <a href="team.html" class="nav-item nav-link" data-translate="nav.trainer">Trainer</a>
+                        <a href="portfolio.html" class="nav-item nav-link" data-translate="nav.feedback">Feedback</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="nav.blog">Blog</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="blog.html" class="dropdown-item" data-translate="nav.blog-grid">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item" data-translate="nav.blog-detail">Blog Detail</a>
                             </div>
                         </div>
-                        <a href="donations.html" class="nav-item nav-link">Donations</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="donations.html" class="nav-item nav-link" data-translate="nav.donations">Donations</a>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="nav.contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -96,11 +100,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Service</h2>
+                        <h2 data-translate="service.page-title">Service</h2>
                     </div>
                     <div class="col-12">
-                        <a href="index.html">Home</a>
-                        <a href="service.html">Service</a>
+                        <a href="index.html" data-translate="service.breadcrumb-home">Home</a>
+                        <a href="service.html" data-translate="service.breadcrumb-service">Service</a>
                     </div>
                 </div>
             </div>
@@ -112,8 +116,8 @@
         <div class="service">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>What we do</p>
-                    <h2>Yoga For Health</h2>
+                    <p data-translate="service.what-we-do">What we do</p>
+                    <h2 data-translate="service.title">Yoga For Health</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
@@ -121,9 +125,10 @@
                             <div class="service-icon">
                                 <i class="flaticon-workout"></i>
                             </div>
-                            <h3>Heal emotions</h3>
-                            <p>
+                            <h3 data-translate="service.heal-emotions.title">Heal emotions</h3>
+                            <p data-translate="service.heal-emotions.desc">
                                 Unwind the mind, open the heart—find healing in every breath and pose.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -131,8 +136,8 @@
                             <div class="service-icon">
                                 <i class="flaticon-workout-1"></i>
                             </div>
-                            <h3>Body Refreshes</h3>
-                            <p>
+                            <h3 data-translate="service.body-refreshes.title">Body Refreshes</h3>
+                            <p data-translate="service.body-refreshes.desc">
                                 Helps you reset, relax, and reconnect through calm movement and breath.
                             </p>
                         </div>
@@ -142,8 +147,8 @@
                             <div class="service-icon">
                                 <i class="flaticon-workout-2"></i>
                             </div>
-                            <h3>Mind & Serenity</h3>
-                            <p>
+                            <h3 data-translate="service.mind-serenity.title">Mind & Serenity</h3>
+                            <p data-translate="service.mind-serenity.desc">
                                 Quiet the noise, soothe the soul—find serenity in every breath and pause.
                             </p>
                         </div>
@@ -153,8 +158,8 @@
                             <div class="service-icon">
                                 <i class="flaticon-workout-3"></i>
                             </div>
-                            <h3>Enjoy Your life</h3>
-                            <p>
+                            <h3 data-translate="service.enjoy-life.title">Enjoy Your life</h3>
+                            <p data-translate="service.enjoy-life.desc">
                                 Slow the pace, lift your joy—embrace the now and let life unfold.
                             </p>
                         </div>
@@ -164,8 +169,8 @@
                             <div class="service-icon">
                                 <i class="flaticon-workout-4"></i>
                             </div>
-                            <h3>Body & Spirituality</h3>
-                            <p>
+                            <h3 data-translate="service.body-spirituality.title">Body & Spirituality</h3>
+                            <p data-translate="service.body-spirituality.desc">
                                 Align the body, awaken the soul—move gently toward balance and light.
                             </p>
                         </div>
@@ -175,8 +180,8 @@
                             <div class="service-icon">
                                 <i class="flaticon-yoga-pose"></i>
                             </div>
-                            <h3>Body & Mind</h3>
-                            <p>
+                            <h3 data-translate="service.body-mind.title">Body & Mind</h3>
+                            <p data-translate="service.body-mind.desc">
                                 Move with purpose, breathe with ease—unite body and mind in quiet harmony.
                             </p>
                         </div>

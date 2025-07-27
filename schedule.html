@@ -23,11 +23,13 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <!-- Language Switcher Script -->
+        <script src="js/translations.js"></script>
     </head>
 
     <body>
         <!-- Top Bar Start -->
-        <div class="top-bar d-none d-md-block">
+        <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
@@ -69,22 +71,22 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="class.html" class="nav-item nav-link">Class</a>
-                        <a href="team.html" class="nav-item nav-link">Trainer</a>
-                        <a href="portfolio.html" class="nav-item nav-link">Feedback</a>
+                        <a href="index.html" class="nav-item nav-link" data-translate="nav.home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-translate="nav.about">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-translate="nav.service">Service</a>
+                        <a href="price.html" class="nav-item nav-link" data-translate="nav.price">Price</a>
+                        <a href="class.html" class="nav-item nav-link" data-translate="nav.class">Class</a>
+                        <a href="team.html" class="nav-item nav-link" data-translate="nav.trainer">Trainer</a>
+                        <a href="portfolio.html" class="nav-item nav-link" data-translate="nav.feedback">Feedback</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="nav.blog">Blog</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="blog.html" class="dropdown-item" data-translate="nav.blog-grid">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item" data-translate="nav.blog-detail">Blog Detail</a>
                             </div>
                         </div>
-                        <a href="donations.html" class="nav-item nav-link">Donations</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="donations.html" class="nav-item nav-link" data-translate="nav.donations">Donations</a>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="nav.contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -96,11 +98,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Schedule Your Class</h2>
+                        <h2 data-translate="schedule.page-title">Schedule Your Class</h2>
                     </div>
                     <div class="col-12">
-                        <a href="index.html">Home</a>
-                        <a href="schedule.html">Schedule</a>
+                        <a href="index.html" data-translate="schedule.breadcrumb-home">Home</a>
+                        <a href="schedule.html" data-translate="schedule.breadcrumb-schedule">Schedule</a>
                     </div>
                 </div>
             </div>
@@ -111,8 +113,8 @@
         <div class="schedule wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Book Your Session</p>
-                    <h2>Schedule Your Yoga Class</h2>
+                    <p data-translate="schedule.section-title">Book Your Session</p>
+                    <h2 data-translate="schedule.section-header">Schedule Your Yoga Class</h2>
                 </div>
                 
                 <div class="row">
@@ -122,13 +124,13 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="name">Full Name *</label>
+                                            <label for="name" data-translate="schedule.form.name">Full Name *</label>
                                             <input type="text" class="form-control" id="name" name="name" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="email">Email Address *</label>
+                                            <label for="email" data-translate="schedule.form.email">Email Address *</label>
                                             <input type="email" class="form-control" id="email" name="email" required>
                                         </div>
                                     </div>
@@ -136,21 +138,21 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="phone">Phone Number *</label>
+                                            <label for="phone" data-translate="schedule.form.phone">Phone Number *</label>
                                             <input type="tel" class="form-control" id="phone" name="phone" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="classType">Class Type *</label>
+                                            <label for="classType" data-translate="schedule.form.class-type">Class Type *</label>
                                             <select class="form-control" id="classType" name="classType" required>
-                                                <option value="">Select Class Type</option>
-                                                <option value="pilates">Pilates Yoga</option>
-                                                <option value="hatha">Hatha Yoga</option>
-                                                <option value="vinyasa">Vinyasa Yoga</option>
-                                                <option value="ashtanga">Ashtanga Yoga</option>
-                                                <option value="kundalini">Kundalini Yoga</option>
-                                                <option value="iyengar">Iyengar Yoga</option>
+                                                <option value="" data-translate="schedule.form.select-class">Select Class Type</option>
+                                                <option value="pilates" data-translate="schedule.form.pilates">Pilates Yoga</option>
+                                                <option value="hatha" data-translate="schedule.form.hatha">Hatha Yoga</option>
+                                                <option value="vinyasa" data-translate="schedule.form.vinyasa">Vinyasa Yoga</option>
+                                                <option value="ashtanga" data-translate="schedule.form.ashtanga">Ashtanga Yoga</option>
+                                                <option value="kundalini" data-translate="schedule.form.kundalini">Kundalini Yoga</option>
+                                                <option value="iyengar" data-translate="schedule.form.iyengar">Iyengar Yoga</option>
                                             </select>
                                         </div>
                                     </div>
@@ -158,63 +160,63 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="date">Preferred Date *</label>
+                                            <label for="date" data-translate="schedule.form.date">Preferred Date *</label>
                                             <input type="date" class="form-control" id="date" name="date" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="time">Preferred Time *</label>
+                                            <label for="time" data-translate="schedule.form.time">Preferred Time *</label>
                                             <select class="form-control" id="time" name="time" required>
-                                                <option value="">Select Time</option>
-                                                <option value="05:00">5:00 AM</option>
-                                                <option value="06:00">6:00 AM</option>
-                                                <option value="07:00">7:00 AM</option>
-                                                <option value="08:00">8:00 AM</option>
-                                                <option value="09:00">9:00 AM</option>
-                                                <option value="10:00">10:00 AM</option>
-                                                <option value="11:00">11:00 AM</option>
-                                                <option value="12:00">12:00 PM</option>
-                                                <option value="13:00">1:00 PM</option>
-                                                <option value="14:00">2:00 PM</option>
-                                                <option value="15:00">3:00 PM</option>
-                                                <option value="16:00">4:00 PM</option>
-                                                <option value="16:30">4:30 PM</option>
+                                                <option value="" data-translate="schedule.form.select-time">Select Time</option>
+                                                <option value="05:00" data-translate="schedule.form.time-5am">5:00 AM</option>
+                                                <option value="06:00" data-translate="schedule.form.time-6am">6:00 AM</option>
+                                                <option value="07:00" data-translate="schedule.form.time-7am">7:00 AM</option>
+                                                <option value="08:00" data-translate="schedule.form.time-8am">8:00 AM</option>
+                                                <option value="09:00" data-translate="schedule.form.time-9am">9:00 AM</option>
+                                                <option value="10:00" data-translate="schedule.form.time-10am">10:00 AM</option>
+                                                <option value="11:00" data-translate="schedule.form.time-11am">11:00 AM</option>
+                                                <option value="12:00" data-translate="schedule.form.time-12pm">12:00 PM</option>
+                                                <option value="13:00" data-translate="schedule.form.time-1pm">1:00 PM</option>
+                                                <option value="14:00" data-translate="schedule.form.time-2pm">2:00 PM</option>
+                                                <option value="15:00" data-translate="schedule.form.time-3pm">3:00 PM</option>
+                                                <option value="16:00" data-translate="schedule.form.time-4pm">4:00 PM</option>
+                                                <option value="16:30" data-translate="schedule.form.time-430pm">4:30 PM</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="message">Special Requests or Notes</label>
-                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Any special requirements or questions..."></textarea>
+                                    <label for="message" data-translate="schedule.form.message">Special Requests or Notes</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" data-translate="schedule.form.message-placeholder" placeholder="Any special requirements or questions..."></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn" style="padding: 15px 30px; font-size: 16px; font-weight: 600; letter-spacing: 1px; color: #ffffff; background: #F7CAC9; border: none; border-radius: 0; transition: .3s; width: 100%;">Book My Class</button>
+                                    <button type="submit" class="btn" style="padding: 15px 30px; font-size: 16px; font-weight: 600; letter-spacing: 1px; color: #ffffff; background: #F7CAC9; border: none; border-radius: 0; transition: .3s; width: 100%;" data-translate="schedule.form.book">Book My Class</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="schedule-info" style="background:#fff;box-shadow:0 0 30px rgba(0,0,0,0.08);padding:30px 30px 20px 30px;border-radius:8px;">
-                            <h3>Class Information</h3>
+                            <h3 data-translate="schedule.info.title">Class Information</h3>
                             <div class="info-item">
-                                <h4><i class="far fa-clock"></i> Class Duration</h4>
-                                <p>60 minutes per session</p>
+                                <h4><i class="far fa-clock"></i> <span data-translate="schedule.info.duration">Class Duration</span></h4>
+                                <p data-translate="schedule.info.duration-text">60 minutes per session</p>
                             </div>
                             <div class="info-item">
-                                <h4><i class="fas fa-users"></i> Class Size</h4>
-                                <p>Maximum 12 students per class</p>
+                                <h4><i class="fas fa-users"></i> <span data-translate="schedule.info.size">Class Size</span></h4>
+                                <p data-translate="schedule.info.size-text">Maximum 12 students per class</p>
                             </div>
                             <div class="info-item">
-                                <h4><i class="fas fa-calendar-alt"></i> Available Days</h4>
-                                <p>Monday - Friday: 5:00 AM - 4:30 PM<br>
+                                <h4><i class="fas fa-calendar-alt"></i> <span data-translate="schedule.info.days">Available Days</span></h4>
+                                <p data-translate="schedule.info.days-text">Monday - Friday: 5:00 AM - 4:30 PM<br>
                                 Saturday: 8:00 AM - 1:30 PM<br>
                                 Sunday: Closed</p>
                             </div>
                             <div class="info-item">
-                                <h4><i class="fas fa-phone"></i> Need Help?</h4>
-                                <p>Call us: +27 78 824 6963<br>
-                                Email: flexiflowstudio@gmail.com</p>
+                                <h4><i class="fas fa-phone"></i> <span data-translate="schedule.info.help">Need Help?</span></h4>
+                                <p><span data-translate="schedule.info.call">Call us:</span> +27 78 824 6963<br>
+                                <span data-translate="schedule.info.email">Email:</span> flexiflowstudio@gmail.com</p>
                             </div>
                         </div>
                     </div>

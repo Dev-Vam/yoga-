@@ -23,25 +23,28 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        
+        <!-- Language Switcher Script -->
+        <script src="js/translations.js"></script>
     </head>
 
 
     <body>
         <!-- Top Bar Start -->
-        <div class="top-bar d-none d-md-block">
+        <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
                                 <i class="far fa-clock"></i>
-                                <h2>5:00 - 16:30</h2>
-                                <p>Mon - Fri</p>
+                                <h2 data-translate="topbar.hours">5:00 - 16:30</h2>
+                                <p data-translate="topbar.days">Mon - Fri</p>
                             </div>
                             <div class="text">
                                 <i class="fa fa-phone-alt"></i>
-                                <h2>+27 78 824 6963</h2>
-                                <p>For Appointment</p>
+                                <h2 data-translate="topbar.phone">+27 78 824 6963</h2>
+                                <p data-translate="topbar.appointment">For Appointment</p>
                             </div>
                         </div>
                     </div>
@@ -53,6 +56,7 @@
                                 <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a href=""><i class="fab fa-instagram"></i></a>
                             </div>
+                            <!-- Language switcher will be injected here by translations.js -->
                         </div>
                     </div>
                 </div>
@@ -70,22 +74,22 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="class.html" class="nav-item nav-link">Class</a>
-                        <a href="team.html" class="nav-item nav-link">Trainer</a>
-                        <a href="portfolio.html" class="nav-item nav-link">Feedback</a>
+                        <a href="index.html" class="nav-item nav-link" data-translate="nav.home">Home</a>
+                        <a href="about.html" class="nav-item nav-link active" data-translate="nav.about">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-translate="nav.service">Service</a>
+                        <a href="price.html" class="nav-item nav-link" data-translate="nav.price">Price</a>
+                        <a href="class.html" class="nav-item nav-link" data-translate="nav.class">Class</a>
+                        <a href="team.html" class="nav-item nav-link" data-translate="nav.trainer">Trainer</a>
+                        <a href="portfolio.html" class="nav-item nav-link" data-translate="nav.feedback">Feedback</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="nav.blog">Blog</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="blog.html" class="dropdown-item" data-translate="nav.blog-grid">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item" data-translate="nav.blog-detail">Blog Detail</a>
                             </div>
                         </div>
-                        <a href="donations.html" class="nav-item nav-link">Donations</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="donations.html" class="nav-item nav-link" data-translate="nav.donations">Donations</a>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="nav.contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -98,11 +102,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>About Us</h2>
+                        <h2 data-translate="about.page-title">About Us</h2>
                     </div>
                     <div class="col-12">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
+                        <a href="index.html" data-translate="about.breadcrumb-home">Home</a>
+                        <a href="about.html" data-translate="about.breadcrumb-about">About Us</a>
                     </div>
                 </div>
             </div>
@@ -121,17 +125,17 @@
                     </div>
                     <div class="col-lg-7 col-md-6">
                         <div class="section-header text-center">
-                            <p>Learn About Us</p>
-                            <h2 class="text-left">Welcome to Flexi Flow Studio</h2>
+                            <p data-translate="about.learn-about">Learn About Us</p>
+                            <h2 class="text-left" data-translate="about.welcome">Welcome to Flexi Flow Studio</h2>
                         </div>
                         <div class="about-text">
-                            <p>
+                            <p data-translate="about.description1">
                                 At Flexi Flow Yoga, we believe yoga is for everyone. Our goal is to help people improve their physical and mental well-being through accessible, high-quality yoga classes. From beginners to experienced yogis, we offer a variety of styles including Hatha, Vinyasa, and Restorative yoga—both in-studio and online.
                             </p>
-                            <p>
+                            <p data-translate="about.description2">
                                 Our studio is a welcoming space where you can connect with your body, mind, and community. We offer a range of classes to suit different needs and preferences, from gentle yoga for beginners to more challenging Vinyasa flows. Whether you're looking to improve your flexibility, strength, or just want to relax and unwind, we have something for everyone.
                             </p>
-                            <a class="btn" href="price.html">Learn More</a>
+                            <a class="btn" href="price.html" data-translate="about.learn-more">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -144,8 +148,8 @@
         <div class="team">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Our founders</p>
-                    <h2>Expert Yoga Trainer</h2>
+                    <p data-translate="about.our-founders">Our founders</p>
+                    <h2 data-translate="about.expert-trainer">Expert Yoga Trainer</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
@@ -161,7 +165,7 @@
                             </div>
                             <div class="team-text">
                                 <h2>Zola Keita</h2>
-                                <p>Yoga Teacher</p>
+                                <p data-translate="about.yoga-teacher">Yoga Teacher</p>
                             </div>
                         </div>
                     </div>
@@ -178,7 +182,7 @@
                             </div>
                             <div class="team-text">
                                 <h2>Ayana Afumba</h2>
-                                <p>Yoga Teacher</p>
+                                <p data-translate="about.yoga-teacher">Yoga Teacher</p>
                             </div>
                         </div>
                     </div>
@@ -195,7 +199,7 @@
                             </div>
                             <div class="team-text">
                                 <h2>Zella Chalo</h2>
-                                <p>Yoga Teacher</p>
+                                <p data-translate="about.yoga-teacher">Yoga Teacher</p>
                             </div>
                         </div>
                     </div>

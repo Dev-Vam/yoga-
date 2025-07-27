@@ -23,25 +23,27 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <!-- Language Switcher Script -->
+        <script src="js/translations.js"></script>
     </head>
 
 
     <body>
         <!-- Top Bar Start -->
-        <div class="top-bar d-none d-md-block">
+        <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
                                 <i class="far fa-clock"></i>
-                                <h2>5:00 - 16:30</h2>
-                                <p>Mon - Fri</p>
+                                <h2 data-translate="topbar.hours">5:00 - 16:30</h2>
+                                <p data-translate="topbar.days">Mon - Fri</p>
                             </div>
                             <div class="text">
                                 <i class="fa fa-phone-alt"></i>
-                                <h2>+27 78 824 6963</h2>
-                                <p>For Appointment</p>
+                                <h2 data-translate="topbar.phone">+27 78 824 6963</h2>
+                                <p data-translate="topbar.appointment">For Appointment</p>
                             </div>
                         </div>
                     </div>
@@ -53,6 +55,7 @@
                                 <a href=""><i class="fab fa-linkedin-in"></i></a>
                                 <a href=""><i class="fab fa-instagram"></i></a>
                             </div>
+                            <!-- Language switcher will be injected here by translations.js -->
                         </div>
                     </div>
                 </div>
@@ -70,22 +73,22 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="class.html" class="nav-item nav-link active">Class</a>
-                        <a href="team.html" class="nav-item nav-link">Trainer</a>
-                        <a href="portfolio.html" class="nav-item nav-link">Feedback</a>
+                        <a href="index.html" class="nav-item nav-link" data-translate="nav.home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-translate="nav.about">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-translate="nav.service">Service</a>
+                        <a href="price.html" class="nav-item nav-link" data-translate="nav.price">Price</a>
+                        <a href="class.html" class="nav-item nav-link active" data-translate="nav.class">Class</a>
+                        <a href="team.html" class="nav-item nav-link" data-translate="nav.trainer">Trainer</a>
+                        <a href="portfolio.html" class="nav-item nav-link" data-translate="nav.feedback">Feedback</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="nav.blog">Blog</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="blog.html" class="dropdown-item" data-translate="nav.blog-grid">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item" data-translate="nav.blog-detail">Blog Detail</a>
                             </div>
                         </div>
-                        <a href="donations.html" class="nav-item nav-link">Donations</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="donations.html" class="nav-item nav-link" data-translate="nav.donations">Donations</a>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="nav.contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -98,11 +101,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Class</h2>
+                        <h2 data-translate="class.page-title">Class</h2>
                     </div>
                     <div class="col-12">
-                        <a href="index.html">Home</a>
-                        <a href="class.html">Class</a>
+                        <a href="index.html" data-translate="class.breadcrumb-home">Home</a>
+                        <a href="class.html" data-translate="class.breadcrumb-class">Class</a>
                     </div>
                 </div>
             </div>
@@ -114,17 +117,17 @@
         <div class="class">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Our Classes</p>
-                    <h2>Yoga Class Shedule</h2>
+                    <p data-translate="class.our-classes">Our Classes</p>
+                    <h2 data-translate="class.schedule">Yoga Class Schedule</h2>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <ul id="class-filter">
-                            <li data-filter="*" class="filter-active">All Classes</li>
-                            <li data-filter=".filter-1">Body Balance</li>
-                            <li data-filter=".filter-2">Hatha Yoga</li>
-                            <li data-filter=".filter-3">Children Yoga</li>
-                            <li data-filter=".filter-4">Yoga Dance</li>
+                            <li data-filter="*" class="filter-active" data-translate="class.filter.all">All Classes</li>
+                            <li data-filter=".filter-1" data-translate="class.filter.body-balance">Body Balance</li>
+                            <li data-filter=".filter-2" data-translate="class.filter.hatha">Hatha Yoga</li>
+                            <li data-filter=".filter-3" data-translate="class.filter.children">Children Yoga</li>
+                            <li data-filter=".filter-4" data-translate="class.filter.dance">Yoga Dance</li>
                         </ul>
                     </div>
                 </div>
@@ -137,13 +140,13 @@
                             <div class="class-text">
                                 <div class="class-teacher">
                                     <img src="img/tutor1.jpg" alt="Image">
-                                    <h3>Lebogang Rogombé</h3>
+                                    <h3 data-translate="class.teacher.lebogang">Lebogang Rogombé</h3>
                                     <a href="schedule.html?class=Pilates%20Yoga">+</a>
                                 </div>
-                                <h2>Pilates Yoga</h2>
+                                <h2 data-translate="class.pilates-yoga">Pilates Yoga</h2>
                                 <div class="class-meta">
-                                    <p><i class="far fa-calendar-alt"></i>Sun, Tue, Thu</p>
-                                    <p><i class="far fa-clock"></i>5:00 - 7:00</p>
+                                    <p><i class="far fa-calendar-alt"></i><span data-translate="class.days.sun-tue-thu">Sun, Tue, Thu</span></p>
+                                    <p><i class="far fa-clock"></i><span data-translate="class.time.5-7">5:00 - 7:00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -156,14 +159,13 @@
                             <div class="class-text">
                                 <div class="class-teacher">
                                     <img src="img/tutor2.jpg" alt="Image">
-                                    <h3>Boipelo Kambanda
-                                    </h3>
+                                    <h3 data-translate="class.teacher.boipelo">Boipelo Kambanda</h3>
                                     <a href="schedule.html?class=Iyengar%20Yoga">+</a>
                                 </div>
-                                <h2>Iyengar Yoga</h2>
+                                <h2 data-translate="class.iyengar-yoga">Iyengar Yoga</h2>
                                 <div class="class-meta">
-                                    <p><i class="far fa-calendar-alt"></i>Mon, Wed, Fri</p>
-                                    <p><i class="far fa-clock"></i>7:05 - 9:00</p>
+                                    <p><i class="far fa-calendar-alt"></i><span data-translate="class.days.mon-wed-fri">Mon, Wed, Fri</span></p>
+                                    <p><i class="far fa-clock"></i><span data-translate="class.time.7-9">7:05 - 9:00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -176,13 +178,13 @@
                             <div class="class-text">
                                 <div class="class-teacher">
                                     <img src="img/teacher-3.png" alt="Image">
-                                    <h3>Elina Ekman</h3>
+                                    <h3 data-translate="class.teacher.elina">Elina Ekman</h3>
                                     <a href="schedule.html?class=Ashtanga%20yoga">+</a>
                                 </div>
-                                <h2>Ashtanga yoga</h2>
+                                <h2 data-translate="class.ashtanga-yoga">Ashtanga yoga</h2>
                                 <div class="class-meta">
-                                    <p><i class="far fa-calendar-alt"></i>Sun, Tue, Thu</p>
-                                    <p><i class="far fa-clock"></i>9:05 - 11:00</p>
+                                    <p><i class="far fa-calendar-alt"></i><span data-translate="class.days.sun-tue-thu">Sun, Tue, Thu</span></p>
+                                    <p><i class="far fa-clock"></i><span data-translate="class.time.9-11">9:05 - 11:00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -195,13 +197,13 @@
                             <div class="class-text">
                                 <div class="class-teacher">
                                     <img src="img/teacher-4.png" alt="Image">
-                                    <h3>Lilly Fry</h3>
+                                    <h3 data-translate="class.teacher.lilly">Lilly Fry</h3>
                                     <a href="schedule.html?class=Hatha%20Yoga">+</a>
                                 </div>
-                                <h2>Hatha Yoga</h2>
+                                <h2 data-translate="class.hatha-yoga">Hatha Yoga</h2>
                                 <div class="class-meta">
-                                    <p><i class="far fa-calendar-alt"></i>Mon, Wed, Fri</p>
-                                    <p><i class="far fa-clock"></i>12:00 - 14:00</p>
+                                    <p><i class="far fa-calendar-alt"></i><span data-translate="class.days.mon-wed-fri">Mon, Wed, Fri</span></p>
+                                    <p><i class="far fa-clock"></i><span data-translate="class.time.12-14">12:00 - 14:00</span></p>
                                 </div>
                             </div>
                         </div>
@@ -214,13 +216,13 @@
                             <div class="class-text">
                                 <div class="class-teacher">
                                     <img src="img/tutor3.jpg" alt="Image">
-                                    <h3>Tumaini Mogaji</h3>
+                                    <h3 data-translate="class.teacher.tumaini">Tumaini Mogaji</h3>
                                     <a href="schedule.html?class=Kundalini%20Yoga">+</a>
                                 </div>
-                                <h2>Kundalini Yoga</h2>
+                                <h2 data-translate="class.kundalini-yoga">Kundalini Yoga</h2>
                                 <div class="class-meta">
-                                    <p><i class="far fa-calendar-alt"></i>Sun, Tue, Thu</p>
-                                    <p><i class="far fa-clock"></i>14:00 - 15:30</p>
+                                    <p><i class="far fa-calendar-alt"></i><span data-translate="class.days.sun-tue-thu">Sun, Tue, Thu</span></p>
+                                    <p><i class="far fa-clock"></i><span data-translate="class.time.14-15">14:00 - 15:30</span></p>
                                 </div>
                             </div>
                         </div>
@@ -233,13 +235,13 @@
                             <div class="class-text">
                                 <div class="class-teacher">
                                     <img src="img/tutor4.jpg" alt="Image">
-                                    <h3>Alexander Kinsley</h3>
+                                    <h3 data-translate="class.teacher.alexander">Alexander Kinsley</h3>
                                     <a href="schedule.html?class=Vinyasa%20yoga">+</a>
                                 </div>
-                                <h2>Vinyasa yoga</h2>
+                                <h2 data-translate="class.vinyasa-yoga">Vinyasa yoga</h2>
                                 <div class="class-meta">
-                                    <p><i class="far fa-calendar-alt"></i>Mon, Wed, Fri</p>
-                                    <p><i class="far fa-clock"></i>15:30 - 16:30</p>
+                                    <p><i class="far fa-calendar-alt"></i><span data-translate="class.days.mon-wed-fri">Mon, Wed, Fri</span></p>
+                                    <p><i class="far fa-clock"></i><span data-translate="class.time.15-16">15:30 - 16:30</span></p>
                                 </div>
                             </div>
                         </div>
@@ -254,14 +256,14 @@
         <div class="discount wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Awesome Discount</p>
-                    <h2>Get <span>20%</span> Discount for all Classes</h2>
+                    <p data-translate="discount.awesome-discount">Awesome Discount</p>
+                    <h2 data-translate="discount.get-discount">Get <span>20%</span> Discount for all Classes</h2>
                 </div>
                 <div class="container discount-text">
-                    <p>
+                    <p data-translate="discount.discount-text">
                         Take the first step toward a healthier, more centered you — and enjoy 15% off your first month of yoga classes. Whether you're new to the mat or deepening your practice, our welcoming community and expert guidance are here to support your journey. 
                     </p>
-                    <a class="btn">Join Now</a>
+                    <a class="btn" data-translate="discount.join-now">Join Now</a>
                 </div>
             </div>
         </div>

@@ -151,6 +151,139 @@ a:focus {
     background: #ffffff;
 }
 
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .15);
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 60px;
+    height: 25px;
+}
+
+.lang-btn:hover {
+    background: #ffffff;
+    color: #343148;
+}
+
+.lang-btn .current-lang {
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.lang-btn i {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.lang-dropdown.active .lang-btn i {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 120px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.lang-dropdown.active .lang-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    color: #343148;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.lang-option:last-child {
+    border-bottom: none;
+}
+
+.lang-option:hover {
+    background: #f8f9fa;
+    color: #343148;
+    text-decoration: none;
+}
+
+.lang-option .flag {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.lang-option .lang-name {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .top-bar {
+        padding: 0 15px;
+    }
+    
+    /* Hide some text elements on very small screens to make room for language button */
+    .top-bar .text {
+        padding: 0 8px;
+    }
+    
+    .top-bar .text h2,
+    .top-bar .text p {
+        font-size: 12px;
+    }
+    
+    /* Adjust language button for mobile */
+    .language-switcher {
+        margin-right: 5px;
+    }
+    
+    .lang-btn {
+        min-width: 50px;
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-bar {
+        padding: 0 30px;
+    }
+}
+
 @media (min-width: 992px) {
     .top-bar {
         padding: 0 60px;

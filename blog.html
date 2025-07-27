@@ -23,12 +23,14 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <!-- Language Switcher Script -->
+        <script src="js/translations.js"></script>
     </head>
 
 
     <body>
         <!-- Top Bar Start -->
-        <div class="top-bar d-none d-md-block">
+        <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
@@ -70,22 +72,22 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>    
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="class.html" class="nav-item nav-link">Class</a>
-                        <a href="team.html" class="nav-item nav-link">Trainer</a>
-                        <a href="portfolio.html" class="nav-item nav-link active">Feedback</a>
+                        <a href="index.html" class="nav-item nav-link" data-translate="nav.home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-translate="nav.about">About</a>    
+                        <a href="service.html" class="nav-item nav-link" data-translate="nav.service">Service</a>
+                        <a href="price.html" class="nav-item nav-link" data-translate="nav.price">Price</a>
+                        <a href="class.html" class="nav-item nav-link" data-translate="nav.class">Class</a>
+                        <a href="team.html" class="nav-item nav-link" data-translate="nav.trainer">Trainer</a>
+                        <a href="portfolio.html" class="nav-item nav-link active" data-translate="nav.feedback">Feedback</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="nav.blog">Blog</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item active">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="blog.html" class="dropdown-item active" data-translate="nav.blog-grid">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item" data-translate="nav.blog-detail">Blog Detail</a>
                             </div>
                         </div>
-                        <a href="donations.html" class="nav-item nav-link">Donations</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="donations.html" class="nav-item nav-link" data-translate="nav.donations">Donations</a>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="nav.contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -98,11 +100,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Yoga Blog</h2>
+                        <h2 data-translate="blog.page-title">Yoga Blog</h2>
                     </div>
                     <div class="col-12">
-                        <a href="">Home</a>
-                        <a href="">Yoga Blog</a>
+                        <a href="" data-translate="blog.breadcrumb-home">Home</a>
+                        <a href="" data-translate="blog.breadcrumb-blog">Yoga Blog</a>
                     </div>
                 </div>
             </div>
@@ -114,8 +116,8 @@
         <div class="blog">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>From Blog</p>
-                    <h2>Latest Yoga Articles</h2>
+                    <p data-translate="blog.section-title">From Blog</p>
+                    <h2 data-translate="blog.section-header">Latest Yoga Articles</h2>
                 </div>
                 <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="blog-item">
@@ -123,16 +125,16 @@
                             <img src="img/blogs1.jpg" alt="Blog">
                         </div>
                         <div class="blog-text">
-                            <h2>Find Balance Through Yoga</h2>
+                            <h2 data-translate="blog.article1.title">Find Balance Through Yoga</h2>
                             <div class="blog-meta">
-                                <p><i class="far fa-list-alt"></i>Body Balance</p>
-                                <p><i class="far fa-calendar-alt"></i>01-Jan-2025</p>
+                                <p><i class="far fa-list-alt"></i><span data-translate="blog.article1.category">Body Balance</span></p>
+                                <p><i class="far fa-calendar-alt"></i><span data-translate="blog.article1.date">01-Jan-2025</span></p>
                                 <p><i class="far fa-comments"></i>0</p>
                             </div>
-                            <p>
+                            <p data-translate="blog.article1.description">
                                 Discover the power of movement, breath, and stillness. Whether you're a beginner or deep into your practice, yoga offers a space to reconnect with yourself, build strength, and find peace in everyday life. Let your mat become a place of growth, healing, and transformation.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="" data-translate="blog.read-more">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                     <div class="blog-item">
@@ -140,16 +142,16 @@
                             <img src="img/blogs2.jpg" alt="Blog">
                         </div>
                         <div class="blog-text">
-                            <h2>Breathe. Move. Grow</h2>
+                            <h2 data-translate="blog.article2.title">Breathe. Move. Grow</h2>
                             <div class="blog-meta">
-                                <p><i class="far fa-list-alt"></i>Body Fitness</p>
-                                <p><i class="far fa-calendar-alt"></i>10-Feb-2025</p>
+                                <p><i class="far fa-list-alt"></i><span data-translate="blog.article2.category">Body Fitness</span></p>
+                                <p><i class="far fa-calendar-alt"></i><span data-translate="blog.article2.date">10-Feb-2025</span></p>
                                 <p><i class="far fa-comments"></i>0</p>
                             </div>
-                            <p>
+                            <p data-translate="blog.article2.description">
                                 Yoga is more than just a workout — it's a journey toward inner strength and calm. Through mindful movement and focused breath, you can release tension, improve flexibility, and build a deeper connection with yourself. Whether you're stretching in silence or flowing through a dynamic sequence, yoga meets you where you are.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="" data-translate="blog.read-more">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                     <div class="blog-item">
@@ -157,17 +159,16 @@
                             <img src="img/blogs3.jpg" alt="Blog">
                         </div>
                         <div class="blog-text">
-                            <h2>Rooted in Calm, Rising in Strength
-                            </h2>
+                            <h2 data-translate="blog.article3.title">Rooted in Calm, Rising in Strength</h2>
                             <div class="blog-meta">
-                                <p><i class="far fa-list-alt"></i>Body Fitness</p>
-                                <p><i class="far fa-calendar-alt"></i>1-July-2025</p>
+                                <p><i class="far fa-list-alt"></i><span data-translate="blog.article3.category">Body Fitness</span></p>
+                                <p><i class="far fa-calendar-alt"></i><span data-translate="blog.article3.date">1-July-2025</span></p>
                                 <p><i class="far fa-comments"></i>0</p>
                             </div>
-                            <p>
+                            <p data-translate="blog.article3.description">
                                 Yoga invites you to slow down, breathe deeply, and reconnect with your body. Each pose helps build flexibility, balance, and inner peace — both on and off the mat. It's not about perfection, but presence. Whether you're starting fresh or continuing your journey, yoga offers a quiet space to grow, release, and renew.
                             </p>
-                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="" data-translate="blog.read-more">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>        
                     <div class="blog-item">
@@ -175,16 +176,16 @@
                             <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Powerful Foods from Unsplash">
                         </div>
                         <div class="blog-text">
-                            <h2>24 Most Powerful Foods</h2>
+                            <h2 data-translate="blog.article4.title">24 Most Powerful Foods</h2>
                             <div class="blog-meta">
-                                <p><i class="far fa-list-alt"></i>Nutrition</p>
-                                <p><i class="far fa-calendar-alt"></i>01-Aug-2025</p>
+                                <p><i class="far fa-list-alt"></i><span data-translate="blog.article4.category">Nutrition</span></p>
+                                <p><i class="far fa-calendar-alt"></i><span data-translate="blog.article4.date">01-Aug-2025</span></p>
                                 <p><i class="far fa-comments"></i>0</p>
                             </div>
-                            <p>
+                            <p data-translate="blog.article4.description">
                                 Discover the 24 most powerful foods for your health, from honey and avocado to aloe vera and tomatoes. Learn what makes each food special and how they can boost your well-being!
                             </p>
-                            <a class="btn" href="single-powerful-foods.html">Read More <i class="fa fa-angle-right"></i></a>
+                            <a class="btn" href="single-powerful-foods.html" data-translate="blog.read-more">Read More <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>

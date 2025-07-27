@@ -23,11 +23,13 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <!-- Language Switcher Script -->
+        <script src="js/translations.js"></script>
     </head>
 
     <body>
         <!-- Top Bar Start -->
-        <div class="top-bar d-none d-md-block">
+        <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
@@ -69,22 +71,22 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Price</a>
-                        <a href="class.html" class="nav-item nav-link">Class</a>
-                        <a href="team.html" class="nav-item nav-link">Trainer</a>
-                        <a href="portfolio.html" class="nav-item nav-link">Feedback</a>
+                        <a href="index.html" class="nav-item nav-link" data-translate="nav.home">Home</a>
+                        <a href="about.html" class="nav-item nav-link" data-translate="nav.about">About</a>
+                        <a href="service.html" class="nav-item nav-link" data-translate="nav.service">Service</a>
+                        <a href="price.html" class="nav-item nav-link" data-translate="nav.price">Price</a>
+                        <a href="class.html" class="nav-item nav-link" data-translate="nav.class">Class</a>
+                        <a href="team.html" class="nav-item nav-link" data-translate="nav.trainer">Trainer</a>
+                        <a href="portfolio.html" class="nav-item nav-link" data-translate="nav.feedback">Feedback</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-translate="nav.blog">Blog</a>
                             <div class="dropdown-menu">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="blog.html" class="dropdown-item" data-translate="nav.blog-grid">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item" data-translate="nav.blog-detail">Blog Detail</a>
                             </div>
                         </div>
-                        <a href="donations.html" class="nav-item nav-link">Donations</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="donations.html" class="nav-item nav-link" data-translate="nav.donations">Donations</a>
+                        <a href="contact.html" class="nav-item nav-link" data-translate="nav.contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -96,11 +98,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Booking Confirmed</h2>
+                        <h2 data-translate="booking.page-title">Booking Confirmed</h2>
                     </div>
                     <div class="col-12">
-                        <a href="index.html">Home</a>
-                        <a href="booking-success.html">Booking Success</a>
+                        <a href="index.html" data-translate="booking.breadcrumb-home">Home</a>
+                        <a href="booking-success.html" data-translate="booking.breadcrumb-success">Booking Success</a>
                     </div>
                 </div>
             </div>
@@ -116,59 +118,59 @@
                             <div class="success-icon mb-4">
                                 <i class="fas fa-check-circle" style="font-size:80px;color:#28a745;"></i>
                             </div>
-                            <h2 class="mb-4" style="color:#343148;">Booking Confirmed!</h2>
-                            <p class="lead mb-4" style="color:#797979;font-size:18px;">
+                            <h2 class="mb-4" style="color:#343148;" data-translate="booking.success.title">Booking Confirmed!</h2>
+                            <p class="lead mb-4" style="color:#797979;font-size:18px;" data-translate="booking.success.message">
                                 Thank you for booking your yoga class with Flexi Flow Studio. Your booking has been successfully submitted!
                             </p>
                             
                             <div class="booking-details mb-4" style="background:#f8f9fa;padding:25px;border-radius:5px;text-align:left;">
-                                <h4 style="color:#343148;margin-bottom:20px;"><i class="fas fa-calendar-check"></i> Booking Details</h4>
+                                <h4 style="color:#343148;margin-bottom:20px;"><i class="fas fa-calendar-check"></i> <span data-translate="booking.details.title">Booking Details</span></h4>
                                 <div id="bookingDetails">
                                     <!-- Booking details will be populated by JavaScript -->
                                 </div>
                             </div>
                             
                             <div class="next-steps mb-4">
-                                <h4 style="color:#343148;margin-bottom:15px;">What's Next?</h4>
+                                <h4 style="color:#343148;margin-bottom:15px;" data-translate="booking.next.title">What's Next?</h4>
                                 <div class="row text-left">
                                     <div class="col-md-6">
                                         <div class="step-item mb-3">
                                             <i class="fas fa-envelope" style="color:#F7CAC9;margin-right:10px;"></i>
-                                            <span>Check your email for confirmation</span>
+                                            <span data-translate="booking.next.email">Check your email for confirmation</span>
                                         </div>
                                         <div class="step-item mb-3">
                                             <i class="fas fa-phone" style="color:#F7CAC9;margin-right:10px;"></i>
-                                            <span>We'll contact you within 24 hours</span>
+                                            <span data-translate="booking.next.contact">We'll contact you within 24 hours</span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="step-item mb-3">
                                             <i class="fas fa-clock" style="color:#F7CAC9;margin-right:10px;"></i>
-                                            <span>Arrive 10 minutes before class</span>
+                                            <span data-translate="booking.next.arrive">Arrive 10 minutes before class</span>
                                         </div>
                                         <div class="step-item mb-3">
                                             <i class="fas fa-tshirt" style="color:#F7CAC9;margin-right:10px;"></i>
-                                            <span>Wear comfortable clothing</span>
+                                            <span data-translate="booking.next.clothing">Wear comfortable clothing</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             
                             <div class="contact-info mb-4" style="background:#F7CAC9;padding:20px;border-radius:5px;">
-                                <h5 style="color:#343148;margin-bottom:10px;">Need to make changes?</h5>
+                                <h5 style="color:#343148;margin-bottom:10px;" data-translate="booking.contact.title">Need to make changes?</h5>
                                 <p style="color:#343148;margin-bottom:5px;">
                                     <i class="fas fa-phone" style="margin-right:8px;"></i>
-                                    Call us: +27 78 824 6963
+                                    <span data-translate="booking.contact.call">Call us:</span> +27 78 824 6963
                                 </p>
                                 <p style="color:#343148;margin-bottom:0;">
                                     <i class="fas fa-envelope" style="margin-right:8px;"></i>
-                                    Email: flexiflowstudio@gmail.com
+                                    <span data-translate="booking.contact.email">Email:</span> flexiflowstudio@gmail.com
                                 </p>
                             </div>
                             
                             <div class="action-buttons">
-                                <a href="index.html" class="btn" style="margin-right:15px;padding:12px 25px;">Back to Home</a>
-                                <a href="class.html" class="btn" style="padding:12px 25px;">View More Classes</a>
+                                <a href="index.html" class="btn" style="margin-right:15px;padding:12px 25px;" data-translate="booking.buttons.home">Back to Home</a>
+                                <a href="class.html" class="btn" style="padding:12px 25px;" data-translate="booking.buttons.classes">View More Classes</a>
                             </div>
                         </div>
                     </div>
@@ -235,10 +237,10 @@
                 
                 // Populate booking details
                 $('#bookingDetails').html(`
-                    <p><strong>Name:</strong> ${bookingData.name}</p>
-                    <p><strong>Class Type:</strong> ${bookingData.classType}</p>
-                    <p><strong>Date:</strong> ${bookingData.date}</p>
-                    <p><strong>Time:</strong> ${bookingData.time}</p>
+                    <p><strong data-translate="booking.details.name">Name:</strong> ${bookingData.name}</p>
+                    <p><strong data-translate="booking.details.class-type">Class Type:</strong> ${bookingData.classType}</p>
+                    <p><strong data-translate="booking.details.date">Date:</strong> ${bookingData.date}</p>
+                    <p><strong data-translate="booking.details.time">Time:</strong> ${bookingData.time}</p>
                 `);
                 
                 // Auto-redirect to home page after 10 seconds (optional)
